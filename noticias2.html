@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias Hoy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">Noticias Hoy</a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="imagenes/menu.png" class="menu-icono" alt="menu">
+            </label>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nacionales">Nacionales</a></li>
+                    <li><a href="#eventos Deportivos">Deportes</a></li>
+                    <li><a href="#eventos">Eventos</a></li>
+                    <li><a href="login.html">Administrador</a></li>
+                </ul>
+            </nav>            
+        </div>
+
+        <div class="header-content container">
+            <div class="header-txt">
+                <span>Bienvenido a Noticias Hoy</span>
+                <h1>Últimas Noticias y Actualidad</h1>
+                <p>Descubre las noticias más recientes en diferentes categorías y mantente informado.</p>
+            </div>
+            <div class="header-img">
+                <img src="imagenes/noticias.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <section class="top-news container">
+        <!-- Contenido principal de las noticias -->
+    </section>
+
+    <main class="categories container">
+        <!-- Secciones de categorías de noticias -->
+    </main>
+
+    <!-- Panel de administración -->
+    <section id="admin" class="admin-panel container">
+        <h2>Panel de Administración</h2>
+        <form id="admin-form">
+            <div class="form-group">
+                <label for="title">Título de la noticia:</label>
+                <input type="text" id="title" name="title" placeholder="Escribe el título de la noticia" required>
+            </div>
+
+            <div class="form-group">
+                <label for="category">Categoría:</label>
+                <select id="category" name="category" required>
+                    <option value="nacionales">Nacionales</option>
+                    <option value="internacionales">Internacionales</option>
+                    <option value="deportes">Deportes</option>
+                    <option value="entretenimiento">Entretenimiento</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="content">Contenido de la noticia:</label>
+                <textarea id="content" name="content" placeholder="Escribe el contenido de la noticia" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="image">Imagen de la noticia:</label>
+                <input type="file" id="image" name="image" accept="image/*">
+            </div>
+
+            <button type="submit">Actualizar Noticias</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
